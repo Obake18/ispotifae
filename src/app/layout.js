@@ -15,3 +15,14 @@ export default function RootLayout({ children }) {
     </html>
   )
 }
+
+function Cabeca (x, y){
+
+  return (
+    <div style={{left : x, top : y}} className="pesquisa-container">
+      
+    </div>
+  )
+
+  
+}
