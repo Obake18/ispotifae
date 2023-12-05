@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
           <Secao>Search</Secao>
           <Secao>Your Library</Secao>
         </div>
-        <div className="containerfuncoes">
+        <div className="container-funcoes">
           <Secao>Criar Playlist</Secao>
           <Secao>Seus Favoritos</Secao>
         </div>
