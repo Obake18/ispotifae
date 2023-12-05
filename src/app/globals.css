@@ -1,9 +1,9 @@
-body{
+body {
   background: var(--secondary-secondary-02, #191414);
   display: flex;
-width: 1440px;
-height: 1024px;
-padding: 4px 204px 972px 204px;
-justify-content: center;
-align-items: center;
+  width: 1440px;
+  height: 1024px;
+  padding: 4px 204px 972px 204px;
+  justify-content: center;
+  align-items: center;
 }
