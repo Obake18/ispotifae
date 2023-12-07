@@ -17,7 +17,7 @@ function Secao({ children, imagem }) {
   )
 
 }
-
+///
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
