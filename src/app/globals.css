@@ -1,27 +1,23 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif; /* Certifique-se de importar a fonte Inter no seu projeto */
-<<<<<<< HEAD
-  background: var(--secondary-secondary-01, #181818);
-=======
-  background: var(--secondary-secondary-01, #090909);
->>>>>>> b0f7f2b6209dd396dd4f12e2d0d5423ce6736c0f
-  color: #ffffff; /* Cor do texto */
+  font-family: 'Inter', sans-serif;  
+  color: #ffffff; 
+  background-color: #171717;
 }
 
 .container-nav,
 .container-funcoes {
   display: flex;
-  flex-direction: column; /* Alteração para coluna */
+  flex-direction: column; 
   align-items: flex-start;
   justify-content: flex-start;
-  margin: 10px; /* Ajuste conforme necessário */
+  margin: 10px; 
 }
 
 .container-nav p,
 .container-funcoes p {
-  margin-bottom: 10px; /* Espaçamento entre os itens. Ajuste conforme necessário */
+  margin-bottom: 10px;
 }
 
 .Fundo {

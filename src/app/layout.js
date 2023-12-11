@@ -16,29 +16,6 @@ function Secao({ children, icon }) {
   );
 }
 
-
-<<<<<<< HEAD
-=======
-export function Card({ children }) {
-  const cardStyle = {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: 'fit-content',
-    padding: '20px',
-    backgroundColor: '#000000',
-    color: '#ffffff', 
-    borderRadius: '8px',
-  };
-
-  return (
-    <div style={cardStyle}>
-      {children}
-    </div>
-  );
-}
-
->>>>>>> b0f7f2b6209dd396dd4f12e2d0d5423ce6736c0f
 export default function CustomLayout({ children, backgroundColor }) {
   const containerStyle = {
     backgroundColor: backgroundColor,
