@@ -2,7 +2,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif; /* Certifique-se de importar a fonte Inter no seu projeto */
+<<<<<<< HEAD
   background: var(--secondary-secondary-01, #181818);
+=======
+  background: var(--secondary-secondary-01, #090909);
+>>>>>>> b0f7f2b6209dd396dd4f12e2d0d5423ce6736c0f
   color: #ffffff; /* Cor do texto */
 }
 
