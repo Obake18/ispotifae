@@ -1,10 +1,21 @@
+/* styles/layout.css */
+
 body {
-  background: var(--secondary-secondary-02, #151515);
-  display: flex;
-  width: 1440px;
-  height: 1024px;
-  padding: 4px 204px 972px 204px;
-  justify-content: center;
-  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif; /* Certifique-se de importar a fonte Inter no seu projeto */
 }
 
+.container-nav,
+.container-funcoes {
+  display: flex;
+  flex-direction: column; /* Alteração para coluna */
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 10px; /* Ajuste conforme necessário */
+}
+
+.container-nav p,
+.container-funcoes p {
+  margin-bottom: 10px; /* Espaçamento entre os itens. Ajuste conforme necessário */
+}
