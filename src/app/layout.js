@@ -25,11 +25,11 @@ export function Card({ children }) {
     left: 0,
     width: 'fit-content',
     padding: '20px',
-    backgroundColor: '#333333', // Cinza escuro
-    color: '#ffffff', // Texto branco
-    borderRadius: '8px', // Borda arredondada
+    backgroundColor: '#000000',
+    color: '#ffffff', 
+    borderRadius: '8px',
   };
-  
+
   return (
     <div style={cardStyle}>
       {children}
