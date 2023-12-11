@@ -1,11 +1,10 @@
 // components/CustomLayout.js
 import React from 'react';
-import {card} from "./card.js";
-import './globals.css';
+import Styles from './globals.css';
 
 export const metadata = {
   title: 'Ispotifae',
-  description: 'alguem me socorre',
+  description: 'alguém me socorre',
 };
 
 function Secao({ children, icon }) {
@@ -18,25 +17,6 @@ function Secao({ children, icon }) {
 }
 
 
-export function Card({ children }) {
-  const cardStyle = {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: 'fit-content',
-    padding: '20px',
-    backgroundColor: '#333333', // Cinza escuro
-    color: '#ffffff', // Texto branco
-    borderRadius: '8px', // Borda arredondada
-  };
-  
-  return (
-    <div style={cardStyle}>
-      {children}
-    </div>
-  );
-}
-
 export default function CustomLayout({ children, backgroundColor }) {
   const containerStyle = {
     backgroundColor: backgroundColor,
@@ -45,7 +25,7 @@ export default function CustomLayout({ children, backgroundColor }) {
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
     margin: '10px',
-    color: '#ffffff',
+    color: '#000000',
     position: 'relative',
   };
 
@@ -55,7 +35,7 @@ export default function CustomLayout({ children, backgroundColor }) {
         <title>{metadata.title}</title>
       </head>
       <body style={containerStyle}>
-        <Card>
+        <div className='Fundo'>
           <div className="container-nav">
             <Secao icon="casa.svg">Home</Secao>
             <Secao icon="Search.svg">Search</Secao>
@@ -65,7 +45,7 @@ export default function CustomLayout({ children, backgroundColor }) {
             <Secao icon="playlist.svg">Criar Playlist</Secao>
             <Secao icon="favorites.svg">Seus Favoritos</Secao>
           </div>
-        </Card>
+        </div>
         {children}
       </body>
     </html>
