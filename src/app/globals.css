@@ -1,9 +1,9 @@
-/* styles/layout.css */
-
 body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif; /* Certifique-se de importar a fonte Inter no seu projeto */
+  background: var(--secondary-secondary-01, #111111);
+  color: #ffffff; /* Cor do texto */
 }
 
 .container-nav,
@@ -18,4 +18,14 @@ body {
 .container-nav p,
 .container-funcoes p {
   margin-bottom: 10px; /* Espaçamento entre os itens. Ajuste conforme necessário */
+}
+.Card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: fit-content;
+  padding: 20px;
+  background-color: #333333; /* Cinza escuro */
+  color: #ffffff; /* Texto branco */
+  border-radius: 10px; /* Valor ajustável para arredondar as bordas */
 }
