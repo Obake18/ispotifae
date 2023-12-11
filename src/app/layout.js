@@ -1,8 +1,10 @@
+
 /*import { Inter } from 'next/font/google'
-import './globals.css'
+
 import user from '../app/public/user.svg'
 
 const inter = Inter({ subsets: ['latin'] })*/
+import './globals.css'
 
 export const metadata = {
   title: 'Create Next App',
@@ -36,4 +38,3 @@ export default function RootLayout({ children }) {
 
   )
 }
-

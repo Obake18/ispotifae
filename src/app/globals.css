@@ -1,5 +1,5 @@
 body {
-  background: var(--secondary-secondary-02, #191414);
+  background: var(--secondary-secondary-02, #151515);
   display: flex;
   width: 1440px;
   height: 1024px;
@@ -7,3 +7,4 @@ body {
   justify-content: center;
   align-items: center;
 }
+
