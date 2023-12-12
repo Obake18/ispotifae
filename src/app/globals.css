@@ -58,7 +58,8 @@ body {
   padding: 20px;
   background-color: #333333;
   color: #ffffff;
-  width: 100%; /* Cobrir toda a largura da tela */
+  width: 100%;
+  /* Cobrir toda a largura da tela */
   height: 80px;
   flex-shrink: 0;
 }
@@ -78,6 +79,17 @@ body {
 .seekbar-info p {
   margin: 0;
 }
+.botoes{
+  align-items: center;
+}
+.botoes img {
+  width: 30px;
+  /* Ajuste o tamanho dos ícones conforme necessário */
+  height: 30px;
+  margin: 0 10px;
+  /* Adicione espaçamento entre os botões conforme necessário */
+  cursor: pointer;
+}
 
 .Fundo {
   position: absolute;
@@ -94,8 +106,8 @@ body {
   flex-shrink: 0;
 }
 
-.Fundo-2{
-  position:absolute;
+.Fundo-2 {
+  position: absolute;
   z-index: 5;
   padding: 12px;
   margin-top: 0%;

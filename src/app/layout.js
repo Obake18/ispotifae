@@ -28,22 +28,33 @@ function Albuns({ generos }) {
   );
 }
 
-
-function Seekbar({ capa, icon2 }) {
+function Seekbar({ capa, icon2, botao }) {
   return (
     <div className='seekbar'>
       <div className='seekbar-info'>
         {capa && <img src={`/icons/${capa}`} alt="Capa" />}
-        <p>Algo tocando
-        </p>
-        <p>
-          Ednaldo Pereira
-        </p>
+        <p>Algo tocando</p>
+        <p>Ednaldo Pereira</p>
         {icon2 && <img src={`/icons/${icon2}`} alt="Capa" />}
       </div>
+      {/* Botão de Retroceder */}
+      <img src={"icons/navs/Back.svg"} alt="Retroceder" />
+      <div className='botoes'>
+        {/* Botão de Play */}
+        <img src={"icons/navs/Play.svg"} alt="Play" />
+
+        {/* Botão de Pause */}
+        <img src={"icons/navs/Bottom Nav/Shuffle.svg"} alt="Pause" />
+
+        {/* Botão de Avançar */}
+        <img src={"icons/navs/Forward.svg"} alt="Avançar" />
+
+
+      </div>
     </div>
-  )
+  );
 }
+
 
 
 export default function CustomLayout({ children, backgroundColor }) {
@@ -143,6 +154,8 @@ export default function CustomLayout({ children, backgroundColor }) {
         <title>{metadata.title}</title>
       </head>
       <body style={containerStyle}>
+
+        
         <div className='Fundo'>
           <div className="container-nav">
             <Secao icon="casa.svg">Home</Secao>
@@ -161,11 +174,11 @@ export default function CustomLayout({ children, backgroundColor }) {
           </div>
         </div>
         <div className='Fundo-2'>
-          
+
         </div>
 
         <div>
-          <Seekbar/>
+          <Seekbar />
         </div>
         {children}
       </body>
