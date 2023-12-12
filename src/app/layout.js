@@ -16,16 +16,17 @@ function Secao({ children, icon }) {
   );
 }
 
-function Genero({children, nome}) {
+function Albuns({ generos }) {
   return (
-    <p className={styles.genero}>
-      {nome}
-      {children}
-    </p>
-  )
-  
+    <div>
+      <div className='generos'>
+        {generos.map((genero, index) => (
+          <li key={index}>{genero}</li>
+        ))}
+      </div>
+    </div>
+  );
 }
-
 
 export default function CustomLayout({ children, backgroundColor }) {
   const containerStyle = {
@@ -39,7 +40,84 @@ export default function CustomLayout({ children, backgroundColor }) {
     position: 'relative',
   };
 
-
+  const generosMusicais = [
+    'J-Pop',
+    'Anime Soundtracks',
+    'J-Rock',
+    'Electronic',
+    'Hip-Hop',
+    'Enka',
+    'Traditional Japanese',
+    'Indie',
+    'Kawaii Metal',
+    'City Pop',
+    'Visual Kei',
+    'Kayokyoku',
+    'Jazz',
+    'Classical',
+    'Folk',
+    'Ska',
+    'Reggae',
+    'Punk',
+    'Metal',
+    'Techno',
+    'House',
+    'Trance',
+    'Ambient',
+    'Fusion',
+    'World Music',
+    'Experimental',
+    'Noise',
+    'Post-Rock',
+    'Post-Punk',
+    'Shibuya-Kei',
+    'Electropop',
+    'Art Pop',
+    'Dream Pop',
+    'Shoegaze',
+    'Alternative Rock',
+    'Emo',
+    'Math Rock',
+    'Post-Hardcore',
+    'Hardcore Punk',
+    'Gothic Rock',
+    'Industrial',
+    'New Wave',
+    'Synthpop',
+    'Disco',
+    'Funk',
+    'Soul',
+    'R&B',
+    'Blues',
+    'Rockabilly',
+    'Country',
+    'Bluegrass',
+    'Latin',
+    'Hip-Hop Instrumental',
+    'Beats',
+    'Breakbeat',
+    'Drum and Bass',
+    'Dubstep',
+    'Grime',
+    'Trap',
+    'Chiptune',
+    'Game Music',
+    'Idol Pop',
+    'Anison',
+    'Vocaloid',
+    'Karaoke',
+    'Taiko',
+    'Shamisen',
+    'Koto',
+    'Shakuhachi',
+    'Biwa',
+    'Sanshin',
+    'Okinawan Folk',
+    'Ryukyu Classical',
+    'Gagaku',
+    
+  ];
+  
 
   return (
     <html lang="en">
@@ -54,13 +132,14 @@ export default function CustomLayout({ children, backgroundColor }) {
             <Secao icon="library.svg">Your Library</Secao>
           </div>
 
-            <div className="container-funcoes">
-              <Secao icon="playlist.svg">Criar Playlist</Secao>
-              <Secao icon="favorites.svg">Seus Favoritos</Secao>
-
+          <div className="container-funcoes">
+            <Secao icon="playlist.svg">Criar Playlist</Secao>
+            <Secao icon="favorites.svg">Seus Favoritos</Secao>
           </div>
+
           <div className="container-generos">
-            
+            {/* Renderiza a função Albuns com o vetor de gêneros */}
+            <Albuns generos={generosMusicais} />
           </div>
         </div>
         {children}

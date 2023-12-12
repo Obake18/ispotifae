@@ -14,11 +14,11 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 12px;
-  
+
 }
 
-.container-nav{
- 
+.container-nav {
+
   height: 130px;
 
   flex-direction: column;
@@ -27,6 +27,7 @@ body {
   justify-content: space-between;
   margin: 5px;
 }
+
 .container-funcoes {
 
   border-bottom: 1px solid #ffffff97;
@@ -40,7 +41,17 @@ body {
 
 }
 
+.generos {
+  font-size: 12px; /* Tamanho da fonte menor */
+  font-weight: 200; /* Peso da fonte mais fina */
+  color: rgba(255, 255, 255, 0.7); /* Cor ligeiramente transparente */
+  list-style-type: none; /* Remover os marcadores de lista */
+  padding-left: 0; /* Remover o recuo padrão da lista */
+}
 
+.generos li {
+  margin-bottom: 8px; /* Espaçamento entre as linhas */
+}
 
 
 .Fundo {
@@ -49,7 +60,7 @@ body {
   position: absolute;
   top: 50%;
   left: 0;
-  height: 1750px;
+  height: 1890px;
   width: fit-content;
   padding: 20px;
   background-color: #000000;
