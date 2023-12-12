@@ -16,6 +16,7 @@ function Secao({ children, icon }) {
   );
 }
 
+
 export default function CustomLayout({ children, backgroundColor }) {
   const containerStyle = {
     backgroundColor: backgroundColor,
@@ -27,6 +28,8 @@ export default function CustomLayout({ children, backgroundColor }) {
     color: '#000000',
     position: 'relative',
   };
+
+
 
   return (
     <html lang="en">
@@ -40,9 +43,14 @@ export default function CustomLayout({ children, backgroundColor }) {
             <Secao icon="Search.svg">Search</Secao>
             <Secao icon="library.svg">Your Library</Secao>
           </div>
-          <div className="container-funcoes">
-            <Secao icon="playlist.svg">Criar Playlist</Secao>
-            <Secao icon="favorites.svg">Seus Favoritos</Secao>
+
+            <div className="container-funcoes">
+              <Secao icon="playlist.svg">Criar Playlist</Secao>
+              <Secao icon="favorites.svg">Seus Favoritos</Secao>
+
+          </div>
+          <div className="linha-container">
+            <hr></hr>
           </div>
         </div>
         {children}
