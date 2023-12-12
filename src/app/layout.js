@@ -31,8 +31,8 @@ function Albuns({ generos }) {
 
 function Seekbar({ capa, icon2 }) {
   return (
-    <div>
-      <div>
+    <div className='seekbar'>
+      <div className='seekbar-info'>
         {capa && <img src={`/icons/${capa}`} alt="Capa" />}
         <p>Algo tocando
         </p>
@@ -160,9 +160,12 @@ export default function CustomLayout({ children, backgroundColor }) {
             <Albuns generos={generosMusicais} />
           </div>
         </div>
+        <div className='Fundo-2'>
+          
+        </div>
 
         <div>
-          <Seekbar />
+          <Seekbar/>
         </div>
         {children}
       </body>

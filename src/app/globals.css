@@ -6,7 +6,6 @@ body {
   background-color: #171717;
 }
 
-
 .Secao {
   color: var(--neutral-neutral-01, #B2B2B2);
   font-family: Circular Std;
@@ -14,83 +13,98 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 12px;
+}
 
+.container-nav,
+.container-funcoes {
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 5px;
 }
 
 .container-nav {
-
   height: 130px;
-
-  flex-direction: column;
-  align-items: flex-start;
   border-radius: 15px;
   justify-content: space-between;
-  margin: 5px;
 }
 
 .container-funcoes {
-
   border-bottom: 1px solid #ffffff97;
-
   height: 95px;
-
-  flex-direction: column;
-  align-items: flex-start;
   justify-content: space-between;
-  margin: 5px;
-
 }
 
 .generos {
-  font-size: 12px; /* Tamanho da fonte menor */
-  font-weight: 200; /* Peso da fonte mais fina */
-  color: rgba(255, 255, 255, 0.7); /* Cor ligeiramente transparente */
-  list-style-type: none; /* Remover os marcadores de lista */
+  font-size: 12px;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.7);
+  list-style-type: none;
 }
 
 .generos li {
-  margin-bottom: 8px; /* Espaçamento entre as linhas */
+  margin-bottom: 8px;
 }
 
-.seekbar{
-  border-radius: 15px;
-
-  
-}
-/* .container {
+.seekbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  border-radius: 12px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333333;
+  color: #ffffff;
+  width: 100%; /* Cobrir toda a largura da tela */
+  height: 80px;
+  flex-shrink: 0;
 }
 
-.cover {
-  max-width: 300px;
-  max-height: 300px;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.seekbar-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.cover img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.seekbar-info img {
+  max-width: 100px;
   border-radius: 8px;
-} */
+  margin-bottom: 10px;
+}
 
+.seekbar-info p {
+  margin: 0;
+}
 
 .Fundo {
-  padding: 0;
-  margin-top: 0%;
   position: absolute;
+  z-index: 5;
+  padding: 12px;
+  margin-top: 0%;
   top: 50%;
   left: 0;
-  margin: 0;
   height: 1890px;
-  width: fit-content;
-  padding: 12px;
+  width: 176px;
   background-color: #000000;
   color: #ffffff;
   border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.Fundo-2{
+  position:absolute;
+  z-index: 5;
+  padding: 12px;
+  margin-top: 0%;
+  top: 50%;
+  right: 0;
+  height: 1890px;
+  width: 176px;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 12px;
+  flex-shrink: 0;
 }
