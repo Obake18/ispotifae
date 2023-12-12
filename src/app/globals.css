@@ -46,12 +46,38 @@ body {
   font-weight: 200; /* Peso da fonte mais fina */
   color: rgba(255, 255, 255, 0.7); /* Cor ligeiramente transparente */
   list-style-type: none; /* Remover os marcadores de lista */
-  padding-left: 0; /* Remover o recuo padrão da lista */
 }
 
 .generos li {
   margin-bottom: 8px; /* Espaçamento entre as linhas */
 }
+
+.seekbar{
+  border-radius: 15px;
+
+  
+}
+/* .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.cover {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+} */
 
 
 .Fundo {
@@ -60,9 +86,10 @@ body {
   position: absolute;
   top: 50%;
   left: 0;
+  margin: 0;
   height: 1890px;
   width: fit-content;
-  padding: 20px;
+  padding: 12px;
   background-color: #000000;
   color: #ffffff;
   border-radius: 12px;

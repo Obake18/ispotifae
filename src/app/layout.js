@@ -28,6 +28,24 @@ function Albuns({ generos }) {
   );
 }
 
+
+function Seekbar({ capa, icon2 }) {
+  return (
+    <div>
+      <div>
+        {capa && <img src={`/icons/${capa}`} alt="Capa" />}
+        <p>Algo tocando
+        </p>
+        <p>
+          Ednaldo Pereira
+        </p>
+        {icon2 && <img src={`/icons/${icon2}`} alt="Capa" />}
+      </div>
+    </div>
+  )
+}
+
+
 export default function CustomLayout({ children, backgroundColor }) {
   const containerStyle = {
     backgroundColor: backgroundColor,
@@ -115,9 +133,9 @@ export default function CustomLayout({ children, backgroundColor }) {
     'Okinawan Folk',
     'Ryukyu Classical',
     'Gagaku',
-    
+
   ];
-  
+
 
   return (
     <html lang="en">
@@ -141,6 +159,10 @@ export default function CustomLayout({ children, backgroundColor }) {
             {/* Renderiza a função Albuns com o vetor de gêneros */}
             <Albuns generos={generosMusicais} />
           </div>
+        </div>
+
+        <div>
+          <Seekbar />
         </div>
         {children}
       </body>
