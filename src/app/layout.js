@@ -16,6 +16,16 @@ function Secao({ children, icon }) {
   );
 }
 
+function Genero({children, nome}) {
+  return (
+    <p className={styles.genero}>
+      {nome}
+      {children}
+    </p>
+  )
+  
+}
+
 
 export default function CustomLayout({ children, backgroundColor }) {
   const containerStyle = {
@@ -24,7 +34,7 @@ export default function CustomLayout({ children, backgroundColor }) {
     flexDirection: 'column',
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
-    margin: '10px',
+    margin: '0px',
     color: '#000000',
     position: 'relative',
   };
@@ -49,8 +59,8 @@ export default function CustomLayout({ children, backgroundColor }) {
               <Secao icon="favorites.svg">Seus Favoritos</Secao>
 
           </div>
-          <div className="linha-container">
-            <hr></hr>
+          <div className="container-generos">
+            
           </div>
         </div>
         {children}
