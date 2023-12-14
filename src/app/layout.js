@@ -17,6 +17,16 @@ function Secao({ children, icon }) {
   );
 }
 
+function SearchBar() {
+  return (
+    <div className={'searchBar'}>
+      <input type="text" placeholder="Buscar no Spotify" className={'input'} />
+      <button className={'button'}>Buscar</button>
+    </div>
+  );
+};
+
+
 function Albuns({ generos }) {
   return (
     <div>
@@ -259,6 +269,7 @@ export default function CustomLayout({ children, backgroundColor }) {
 
           <div>
             <Seekbar />
+            <SearchBar/>
           </div>
           {children}
         </>
