@@ -48,6 +48,7 @@ body {
 }
 
 .seekbar {
+
   position: fixed;
   bottom: 0;
   left: 0;
@@ -82,16 +83,15 @@ body {
   margin: 0;
 }
 
-.botao {
 
-  align-items: center;
-}
 
 .botoes {
-  left: 300px;
+  position: absolute;
+  left: 950px;
   display: flex;
   align-items: center;
-  border: #ffffff 1px solid;
+
+
 }
 
 .botoes img {
