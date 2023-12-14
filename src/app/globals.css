@@ -1,4 +1,5 @@
 body {
+  
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
@@ -6,7 +7,7 @@ body {
   background-color: #171717;
 }
 
-.Secao {
+.Secao {         
   color: var(--neutral-neutral-01, #B2B2B2);
   font-family: Circular Std;
   font-size: 12px;
@@ -35,10 +36,23 @@ body {
 }
 
 .generos {
+
   font-size: 12px;
   font-weight: 200;
   color: rgba(255, 255, 255, 0.7);
   list-style-type: none;
+}
+
+.artitas {
+
+  font-size: 12px;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.7);
+  list-style-type: none;
+}
+
+.artitas li {
+  margin-bottom: 8px;
 }
 
 .generos li {
