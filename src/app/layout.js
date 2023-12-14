@@ -1,6 +1,6 @@
 // components/CustomLayout.js
 import React from 'react';
-import Styles from './globals.css';
+import styles from './globals.css';
 
 export const metadata = {
   title: 'Ispotifae',
@@ -37,17 +37,14 @@ function Seekbar({ capa, icon2 }) {
         <p>Ednaldo Pereira</p>
         {icon2 && <img src={`/icons/${icon2}`} alt="Capa" />}
         <div className='botoes'>
-          {/* Botão de Retroceder */}
+          <img className='botao' src={"icons/navs/Shuffle.svg"} alt="Shuffle" />
           <img className='botao' src={"icons/navs/Back.svg"} alt="Retroceder" />
-
-          {/* Botão de Play */}
           <img className='botao' src={"icons/navs/Play.svg"} alt="Play" />
-
-          {/* Botão de Pause */}
-          <img className='botao' src={"icons/navs/Bottom Nav/Shuffle.svg"} alt="Pause" />
-
-          {/* Botão de Avançar */}
           <img className='botao' src={"icons/navs/Forward.svg"} alt="Avançar" />
+          <img className='botao' src={"icons/navs/Repeat.svg"} alt="Repeat" />
+
+
+
         </div>
       </div>
     </div>
