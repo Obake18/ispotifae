@@ -46,6 +46,11 @@ function Seekbar({ capa, icon2 }) {
 
 
         </div>
+        <div className='barrinha'>
+          <img className='barraseek'
+            src={"/public/barraseek.svg"}
+          />
+        </div>
       </div>
     </div>
 
@@ -53,78 +58,78 @@ function Seekbar({ capa, icon2 }) {
   );
 }
 
-
 const artistasData = [
   {
     id: 1,
     genero: 'J-Pop',
     tipo: 'Música',
-    imagem: 'https://lastfm.freetls.fastly.net/i/u/300x300/0f8d5c7c9b3c4a1c8d6d8c8e2c8d5c8d.jpg',
+    imagem: '/artistas/artist-1.jpg',
   },
   {
     id: 2,
     genero: 'Hip-Hop',
     tipo: 'Música',
-    imagem: 'https://i.scdn.co/image/ab67616d0000b273d1f9f9b7c5c2d7c3d3d7d7c5',
+    imagem: '/artistas/artist-2.jpg',
   },
   {
     id: 3,
     genero: 'Vocaloid',
     tipo: 'Música',
-    imagem: 'https://i.scdn.co/image/ab67616d0000b273f9d5b7a8b7a9d5b7a8b7a9d5',
+    imagem: '/artistas/artist-3.jpg',
   },
   {
     id: 4,
     genero: 'J-Pop',
     tipo: 'Música',
-    imagem: 'https://i.scdn.co/image/ab67616d0000b273c3b7d7c5c2d7d7c5c2d7d7c5',
+    imagem: '/artistas/artist-4.jpg',
   },
   {
     id: 5,
     genero: 'J-Pop',
     tipo: 'Música',
-    imagem: 'https://i.scdn.co/image/ab67616d0000b273b7c5c2d7d7c5c2d7d7c5c2d7',
+    imagem: '/artistas/artist-5.jpg',
   },
   {
     id: 6,
     genero: 'J-Pop',
     tipo: 'Música',
-    imagem: 'https://i.scdn.co/image/ab67616d0000b273c5c2d7d7c5c2d7d7c5c2d7d7',
+    imagem: '/artistas/artist-6.jpg',
   },
   {
     id: 7,
     genero: 'J-Pop',
     tipo: 'Música',
-    imagem: 'https://i.scdn.co/image/ab67616d0000b273d7c5c2d7d7c5c2d7d7c5c2d7',
+    imagem: '/artistas/artist-7.jpg',
   },
   {
     id: 8,
     genero: 'J-Pop',
     tipo: 'Música',
-    imagem: 'https://i.scdn.co/image/ab67616d0000b273c5c2d7d7c5c2d7d7c5c2d7d7',
+    imagem: '/artistas/artist-8.jpg',
   },
   {
     id: 9,
     genero: 'J-Pop',
     tipo: 'Música',
-    imagem: 'https://i.scdn.co/image/ab67616d0000b273c5c2d7d7c5c2d7d7c5c2d7d7',
+    imagem: '/artistas/artist-9.jpg',
   },
   {
     id: 10,
     genero: 'J-Pop',
     tipo: 'Música',
-    imagem: 'https://i.scdn.co/image/ab67616d0000b273c5c2d7d7c5c2d7d7c5c2d7d7',
+    imagem: '/artistas/artist-10.jpg',
   },
 ];
+
 
 function Artistas() {
   return (
     <div className="artistas-container">
       {artistasData.map((artista) => (
         <div key={artista.id} className="artista-item">
-          <img src={artista.imagem} alt={`Imagem de ${artista.genero}`} />
-          <p>Gênero: {artista.genero}</p>
-          <p>Tipo: {artista.tipo}</p>
+          <img src={artista.imagem} alt={artista.genero} />
+          <p>{artista.genero}</p>
+          <p>{artista.tipo}</p>
         </div>
       ))}
     </div>
@@ -222,43 +227,39 @@ export default function CustomLayout({ children, backgroundColor }) {
 
   ];
 
-
   return (
     <html lang="en">
       <head>
         <title>{metadata.title}</title>
       </head>
       <body style={containerStyle}>
+        <>
+          <div className='Fundo'>
+            <div className="container-nav">
+              <Secao icon="casa.svg">Home</Secao>
+              <Secao icon="Search.svg">Search</Secao>
+              <Secao icon="library.svg">Your Library</Secao>
+            </div>
 
+            <div className="container-funcoes">
+              <Secao icon="playlist.svg">Criar Playlist</Secao>
+              <Secao icon="favorites.svg">Seus Favoritos</Secao>
+            </div>
 
-        <div className='Fundo'>
-          <div className="container-nav">
-            <Secao icon="casa.svg">Home</Secao>
-            <Secao icon="Search.svg">Search</Secao>
-            <Secao icon="library.svg">Your Library</Secao>
+            <div className="container-generos">
+              <Albuns generos={generosMusicais} />
+            </div>
           </div>
 
-          <div className="container-funcoes">
-            <Secao icon="playlist.svg">Criar Playlist</Secao>
-            <Secao icon="favorites.svg">Seus Favoritos</Secao>
+          <div className='Fundo-2'>
+            <Artistas artistasData={artistasData} />
           </div>
 
-          <div className="container-generos">
-            {/* Renderiza a função Albuns com o vetor de gêneros */}
-            <Albuns generos={generosMusicais} />
+          <div>
+            <Seekbar />
           </div>
-        </div>
-        <div className='Fundo-2'>
-          <Artistas>
-
-          </Artistas>
-        </div>
-
-        <div>
-          <Seekbar>
-          </Seekbar>
-        </div>
-        {children}
+          {children}
+        </>
       </body>
     </html>
   );
