@@ -28,7 +28,7 @@ function Albuns({ generos }) {
   );
 }
 
-function Seekbar({ capa, icon2}) {
+function Seekbar({ capa, icon2 }) {
   return (
     <div className='seekbar'>
       <div className='seekbar-info'>
@@ -36,46 +36,90 @@ function Seekbar({ capa, icon2}) {
         <p>Algo tocando</p>
         <p>Ednaldo Pereira</p>
         {icon2 && <img src={`/icons/${icon2}`} alt="Capa" />}
-      </div>
-      {/* Botão de Retroceder */}
-      <img src={"icons/navs/Back.svg"} alt="Retroceder" />
-      <div className='botoes'>
-        {/* Botão de Play */}
-        <img src={"icons/navs/Play.svg"} alt="Play" />
+        <div className='botoes'>
+          {/* Botão de Retroceder */}
+          <img className='botao' src={"icons/navs/Back.svg"} alt="Retroceder" />
 
-        {/* Botão de Pause */}
-        <img src={"icons/navs/Bottom Nav/Shuffle.svg"} alt="Pause" />
+          {/* Botão de Play */}
+          <img className='botao' src={"icons/navs/Play.svg"} alt="Play" />
 
-        {/* Botão de Avançar */}
-        <img src={"icons/navs/Forward.svg"} alt="Avançar" />
+          {/* Botão de Pause */}
+          <img className='botao' src={"icons/navs/Bottom Nav/Shuffle.svg"} alt="Pause" />
 
-
+          {/* Botão de Avançar */}
+          <img className='botao' src={"icons/navs/Forward.svg"} alt="Avançar" />
+        </div>
       </div>
     </div>
+
+
   );
 }
+
 
 const artistasData = [
   {
     id: 1,
-    genero: 'Pop',
+    genero: 'J-Pop',
     tipo: 'Música',
-    imagem: 'url_da_imagem_artista_1.jpg',
+    imagem: 'https://lastfm.freetls.fastly.net/i/u/300x300/0f8d5c7c9b3c4a1c8d6d8c8e2c8d5c8d.jpg',
   },
   {
     id: 2,
     genero: 'Hip-Hop',
     tipo: 'Música',
-    imagem: 'url_da_imagem_artista_2.jpg',
+    imagem: 'https://i.scdn.co/image/ab67616d0000b273d1f9f9b7c5c2d7c3d3d7d7c5',
   },
   {
     id: 3,
-    genero: 'Podcast',
-    tipo: 'Podcast',
-    imagem: 'url_da_imagem_artista_3.jpg',
-  
+    genero: 'Vocaloid',
+    tipo: 'Música',
+    imagem: 'https://i.scdn.co/image/ab67616d0000b273f9d5b7a8b7a9d5b7a8b7a9d5',
   },
-]
+  {
+    id: 4,
+    genero: 'J-Pop',
+    tipo: 'Música',
+    imagem: 'https://i.scdn.co/image/ab67616d0000b273c3b7d7c5c2d7d7c5c2d7d7c5',
+  },
+  {
+    id: 5,
+    genero: 'J-Pop',
+    tipo: 'Música',
+    imagem: 'https://i.scdn.co/image/ab67616d0000b273b7c5c2d7d7c5c2d7d7c5c2d7',
+  },
+  {
+    id: 6,
+    genero: 'J-Pop',
+    tipo: 'Música',
+    imagem: 'https://i.scdn.co/image/ab67616d0000b273c5c2d7d7c5c2d7d7c5c2d7d7',
+  },
+  {
+    id: 7,
+    genero: 'J-Pop',
+    tipo: 'Música',
+    imagem: 'https://i.scdn.co/image/ab67616d0000b273d7c5c2d7d7c5c2d7d7c5c2d7',
+  },
+  {
+    id: 8,
+    genero: 'J-Pop',
+    tipo: 'Música',
+    imagem: 'https://i.scdn.co/image/ab67616d0000b273c5c2d7d7c5c2d7d7c5c2d7d7',
+  },
+  {
+    id: 9,
+    genero: 'J-Pop',
+    tipo: 'Música',
+    imagem: 'https://i.scdn.co/image/ab67616d0000b273c5c2d7d7c5c2d7d7c5c2d7d7',
+  },
+  {
+    id: 10,
+    genero: 'J-Pop',
+    tipo: 'Música',
+    imagem: 'https://i.scdn.co/image/ab67616d0000b273c5c2d7d7c5c2d7d7c5c2d7d7',
+  },
+];
+
 function Artistas() {
   return (
     <div className="artistas-container">
@@ -164,96 +208,11 @@ export default function CustomLayout({ children, backgroundColor }) {
     'Grime',
     'Trap',
     'Chiptune',
-    'Game Music',￼Home
-
-    ￼Search
-    
-    ￼Your Library
-    
-    ￼Criar Playlist
-    
-    ￼Seus Favoritos
-    
-    J-Pop
-    Anime Soundtracks
-    J-Rock
-    Electronic
-    Hip-Hop
-    Enka
-    Traditional Japanese
-    Indie
-    Kawaii Metal
-    City Pop
-    Visual Kei
-    Kayokyoku
-    Jazz
-    Classical
-    Folk
-    Ska
-    Reggae
-    Punk
-    Metal
-    Techno
-    House
-    Trance
-    Ambient
-    Fusion
-    World Music
-    Experimental
-    Noise
-    Post-Rock
-    Post-Punk
-    Shibuya-Kei
-    Electropop
-    Art Pop
-    Dream Pop
-    Shoegaze
-    Alternative Rock
-    Emo
-    Math Rock
-    Post-Hardcore
-    Hardcore Punk
-    Gothic Rock
-    Industrial
-    New Wave
-    Synthpop
-    Disco
-    Funk
-    Soul
-    R&B
-    Blues
-    Rockabilly
-    Country
-    Bluegrass
-    Latin
-    Hip-Hop Instrumental
-    Beats
-    Breakbeat
-    Drum and Bass
-    Dubstep
-    Grime
-    Trap
-    Chiptune
-    Game Music
-    Idol Pop
-    Anison
-    Vocaloid
-    Karaoke
-    Taiko
-    Shamisen
-    Koto
-    Shakuhachi
-    Biwa
-    Sanshin
-    Okinawan Folk
-    Ryukyu Classical
-    Gagaku
-    ￼
-    Gênero: Pop
-    
-    Tipo: Música
-    
-    
+    'Game Music',
+    'Idol Pop',
+    'Anison',
+    'Vocaloid',
+    'Karaoke',
     'Taiko',
     'Shamisen',
     'Koto',
@@ -274,7 +233,7 @@ export default function CustomLayout({ children, backgroundColor }) {
       </head>
       <body style={containerStyle}>
 
-        
+
         <div className='Fundo'>
           <div className="container-nav">
             <Secao icon="casa.svg">Home</Secao>
@@ -293,13 +252,14 @@ export default function CustomLayout({ children, backgroundColor }) {
           </div>
         </div>
         <div className='Fundo-2'>
-        <Artistas>
+          <Artistas>
 
-        </Artistas>
+          </Artistas>
         </div>
 
         <div>
-          <Seekbar />
+          <Seekbar>
+          </Seekbar>
         </div>
         {children}
       </body>

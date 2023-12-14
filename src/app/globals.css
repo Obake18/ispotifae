@@ -1,5 +1,5 @@
 body {
-  
+
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
@@ -7,7 +7,7 @@ body {
   background-color: #171717;
 }
 
-.Secao {         
+.Secao {
   color: var(--neutral-neutral-01, #B2B2B2);
   font-family: Circular Std;
   font-size: 12px;
@@ -41,18 +41,6 @@ body {
   font-weight: 200;
   color: rgba(255, 255, 255, 0.7);
   list-style-type: none;
-}
-
-.artitas {
-
-  font-size: 12px;
-  font-weight: 200;
-  color: rgba(255, 255, 255, 0.7);
-  list-style-type: none;
-}
-
-.artitas li {
-  margin-bottom: 8px;
 }
 
 .generos li {
@@ -93,16 +81,27 @@ body {
 .seekbar-info p {
   margin: 0;
 }
-.botoes{
+
+.botao {
+
   align-items: center;
 }
+
+.botoes {
+  left: 300px;
+  display: flex;
+  align-items: center;
+  border: #ffffff 1px solid;
+}
+
 .botoes img {
-  width: 30px;
-  /* Ajuste o tamanho dos ícones conforme necessário */
-  height: 30px;
+  width: 20px;
+  /* Tamanho uniforme para todos os botões */
   margin: 0 10px;
-  /* Adicione espaçamento entre os botões conforme necessário */
-  cursor: pointer;
+  /* Espaçamento entre os botões */
+  display: flex;
+  align-items: center;
+  left: 15px;
 }
 
 .Fundo {
@@ -133,4 +132,31 @@ body {
   color: #ffffff;
   border-radius: 12px;
   flex-shrink: 0;
+}
+
+.artistas-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: right;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.artista-item {
+  text-align: right;
+  margin: 10px;
+}
+
+.artista-item img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.artista-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #888;
 }
