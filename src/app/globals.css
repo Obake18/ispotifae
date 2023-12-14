@@ -165,6 +165,33 @@ body {
 }
 
 
+.searchBar {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  border-radius: 20px;
+  padding: 8px;
+}
+
+.input {
+  flex: 1;
+  border: none;
+  background: none;
+  color: #fff;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.button {
+  background-color: #1db954;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
 .barraseek {
   scale: 500%;
   position: absolute;
