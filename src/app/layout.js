@@ -1,6 +1,6 @@
 // components/CustomLayout.js
 import React from 'react';
-import {clsx} from 'clsx';
+
 import styles from './globals.css';
 
 export const metadata = {
@@ -44,8 +44,7 @@ function Seekbar({ capa, icon2 }) {
     <div className='seekbar'>
       <div className='seekbar-info'>
         {capa && <img src={`/icons/${capa}`} alt="Capa" />}
-        {/* <p className={clsx(['classe1', 'classe2'])}>Teste</p>
-        <p>Algo tocando</p> */}
+
         <p>Ednaldo Pereira</p>
         {icon2 && <img src={`/icons/${icon2}`} alt="Capa" />}
         <div className='botoes'>
@@ -61,7 +60,7 @@ function Seekbar({ capa, icon2 }) {
         <div className='barrinha'>
           <img className='barraseek'
             src={"barraseek.svg"} alt='barraseek' />
-    
+
         </div>
       </div>
     </div>
@@ -269,7 +268,7 @@ export default function CustomLayout({ children, backgroundColor }) {
 
           <div>
             <Seekbar />
-            <SearchBar/>
+            <SearchBar />
           </div>
           {children}
         </>
