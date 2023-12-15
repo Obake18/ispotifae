@@ -22,21 +22,21 @@ function SearchBar() {
     <div className={styles.searchBar}>
 
       <div className={styles.barra}>
-        <img src="/images/barradebucas/imagem1.jpg" alt="Imagem 1" />
+        <img className='lupinhaum' src="images/barradebucas/Search.svg" alt="Imagem 1" />
       </div>
 
 
       <div className={styles.butaum}>
         <button>
-          <img src="/images/barradebucas/imagem2.jpg" alt="Imagem 2" />
-          <img src="/images/barradebucas/imagem2.jpg" alt="Imagem 2" />
+          <img src="images/barradebucas/Forward.svg" alt="Imagem 2" />
+          <img src="images/barradebucas/Back.svg" alt="Imagem 2" />
         </button>
       </div>
 
 
       <div className={styles.identidade}>
         <div className='identidade2'>
-          <img src="/images/barradebucas/imagem3.jpg" alt="Imagem 3" />
+          <img className='avatar' src="images/barradebucas/avatar.png" alt="Imagem 3" />
         </div>
 
       </div>
