@@ -19,13 +19,30 @@ function Secao({ children, icon }) {
 
 function SearchBar() {
   return (
-    <div className={'searchBar'}>
-      <input type="text" placeholder="Buscar no Spotify" className={'input'} />
-      <button className={'button'}>Buscar</button>
+    <div className={styles.searchBar}>
+
+      <div className={styles.barra}>
+        <img src="/images/barradebucas/imagem1.jpg" alt="Imagem 1" />
+      </div>
+
+
+      <div className={styles.butaum}>
+        <button>
+          <img src="/images/barradebucas/imagem2.jpg" alt="Imagem 2" />
+          <img src="/images/barradebucas/imagem2.jpg" alt="Imagem 2" />
+        </button>
+      </div>
+
+
+      <div className={styles.identidade}>
+        <div className='identidade2'>
+          <img src="/images/barradebucas/imagem3.jpg" alt="Imagem 3" />
+        </div>
+
+      </div>
     </div>
   );
-};
-
+}
 
 function Albuns({ generos }) {
   return (
