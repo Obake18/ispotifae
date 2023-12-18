@@ -19,22 +19,24 @@ function Secao({ children, icon }) {
 
 function SearchBar() {
   return (
-    <div className={styles.searchBar}>
+    <div className="searchBar">
 
-      <div className={styles.barra}>
+      <div className="barra">
         <img className='lupinhaum' src="images/barradebucas/Search.svg" alt="Imagem 1" />
       </div>
 
 
-      <div className={styles.butaum}>
+      <div className="butaum">
         <button>
-          <img src="images/barradebucas/Forward.svg" alt="Imagem 2" />
           <img src="images/barradebucas/Back.svg" alt="Imagem 2" />
+          <img src="images/barradebucas/Forward.svg" alt="Imagem 2" />
+
+
         </button>
       </div>
 
 
-      <div className={styles.identidade}>
+      <div className="identidade">
         <div className='identidade2'>
           <img className='avatar' src="images/barradebucas/avatar.png" alt="Imagem 3" />
         </div>
@@ -283,9 +285,11 @@ export default function CustomLayout({ children, backgroundColor }) {
             <Artistas artistasData={artistasData} />
           </div>
 
+          <SearchBar />
+
           <div>
             <Seekbar />
-            <SearchBar />
+
           </div>
           {children}
         </>
