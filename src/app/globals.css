@@ -1,14 +1,13 @@
 body {
-
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #ffffff;
   background-color: #171717;
 }
 
 .Secao {
-  color: var(--neutral-neutral-01, #B2B2B2);
+  color: var(--neutral-neutral-01, #b2b2b2);
   font-family: Circular Std;
   font-size: 12px;
   font-style: normal;
@@ -36,7 +35,6 @@ body {
 }
 
 .generos {
-
   font-size: 12px;
   font-weight: 200;
   color: rgba(255, 255, 255, 0.7);
@@ -48,7 +46,6 @@ body {
 }
 
 .seekbar {
-
   position: fixed;
   bottom: 0;
   left: 0;
@@ -83,15 +80,11 @@ body {
   margin: 0;
 }
 
-
-
 .botoes {
   position: absolute;
   left: 950px;
   display: flex;
   align-items: center;
-
-
 }
 
 .botoes img {
@@ -157,42 +150,46 @@ body {
 }
 
 .artista-item p {
-
   border-radius: 50%;
   margin: 0;
   font-size: 14px;
   color: #888;
 }
 
-
-
 .searchBar {
+  background: linear-gradient(
+    45deg,
+    rgba(36, 36, 36, 0.8),
+    rgba(63, 63, 63, 0.8)
+  );
+
   justify-content: space-around;
   width: 100%;
-  background-color: red;
+  background-color: rgb(31, 31, 31);
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.barra img {
+.barra {
+  background: rgba(63, 63, 63, 0.8);
+  border-radius: 8px;
+  border-radius: 12px;
+  width: 50%;
+  height: 30px;
   justify-content: center;
   align-items: center;
-  background-color: darkorange;
-  width: 3ch;
-
-  border-radius: 8px;
-  /* Borda arredondada */
+}
+.lupinhaum {
+  margin-top: 0.35em;
+  margin-left: 1em;
+  width: 2ch;
 }
 
-
-
-.butaum{
-  background-color: darkorange;
-  height: min-content;
-}
 .butaum button {
-background: none;
+  left: 0%;
+  height: min-content;
+  background: none;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -207,24 +204,20 @@ background: none;
   /* Espaçamento entre as imagens */
 }
 
-.identidade{
+.identidade {
   justify-content: center;
-  background-color: darkorange;
+  background-color: rgb(48, 48, 48);
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
 .identidade img.avatar {
-
-width: 4ch;
+  width: 4ch;
   /* Ajuste conforme necessário */
   border-radius: 50%;
   /* Para criar uma imagem de avatar circular */
-
 }
-
-
 
 .barraseek {
   scale: 500%;
