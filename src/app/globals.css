@@ -163,7 +163,7 @@ body {
     rgba(63, 63, 63, 0.8)
   );
 
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   background-color: rgb(31, 31, 31);
   display: flex;
@@ -186,7 +186,13 @@ body {
   width: 2ch;
 }
 
+.butaum button + button {
+  margin-left: 0;
+}
+
 .butaum button {
+
+  margin-left: 0.35em;
   left: 0%;
   height: min-content;
   background: none;
@@ -198,13 +204,13 @@ body {
 }
 
 .butaum img {
+  background: none;
   width: 3ch;
-  /* Para manter a proporção da imagem */
   margin-right: 5px;
-  /* Espaçamento entre as imagens */
 }
 
 .identidade {
+  border-radius: 25px;
   justify-content: center;
   background-color: rgb(48, 48, 48);
   display: flex;
@@ -214,9 +220,15 @@ body {
 
 .identidade img.avatar {
   width: 4ch;
-  /* Ajuste conforme necessário */
   border-radius: 50%;
-  /* Para criar uma imagem de avatar circular */
+}
+
+.identidadeNome {
+  margin-left: 1em;
+  margin-right: 6em;
+  left: 10px;
+color: #ffffff;
+
 }
 
 .barraseek {
