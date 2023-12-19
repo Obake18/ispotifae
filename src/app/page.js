@@ -45,7 +45,7 @@ export default PaginaMusical;
 export function Home() {
   return (
     <main>
-      {/* Conteúdo da página principal */}
+
     </main>
   );
 }

@@ -18,33 +18,42 @@ function Secao({ children, icon }) {
 }
 
 function SearchBar() {
+  const images = {
+    back: "images/barradebucas/Back.svg",
+    forward: "images/barradebucas/Forward.svg",
+    search: "images/barradebucas/Search.svg",
+    avatar: "images/barradebucas/avatar.png"
+  };
+
+  const Button = ({ src, alt }) => (
+    <button>
+      <img src={src} alt={alt} />
+    </button>
+  );
+
+  const Image = ({ className, src, alt }) => (
+    <img className={className} src={src} alt={alt} />
+  );
+
   return (
     <div className="searchBar">
+      <div className="butaum">
+        <Button src={images.back} alt="Imagem 2" />
+        <Button src={images.forward} alt="Imagem 2" />
+      </div>
 
       <div className="barra">
-        <img className='lupinhaum' src="images/barradebucas/Search.svg" alt="Imagem 1" />
+        <Image className='lupinhaum' src={images.search} alt="Imagem 1" />
       </div>
-
-
-      <div className="butaum">
-        <button>
-          <img src="images/barradebucas/Back.svg" alt="Imagem 2" />
-          <img src="images/barradebucas/Forward.svg" alt="Imagem 2" />
-
-
-        </button>
-      </div>
-
 
       <div className="identidade">
-        <div className='identidade2'>
-          <img className='avatar' src="images/barradebucas/avatar.png" alt="Imagem 3" />
-        </div>
-
+        <Image className='avatar' src={images.avatar} alt="Imagem 3" />
+        <div className='identidadeNome'>Charles</div>
       </div>
     </div>
   );
 }
+
 
 function Albuns({ generos }) {
   return (

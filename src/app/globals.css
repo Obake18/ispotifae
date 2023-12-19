@@ -167,22 +167,32 @@ body {
 
 
 .searchBar {
+  justify-content: space-around;
+  width: 100%;
+  background-color: red;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
 .barra img {
-  width: 100px;
-  /* Ajuste conforme necessário */
-  height: auto;
-  /* Para manter a proporção da imagem */
+  justify-content: center;
+  align-items: center;
+  background-color: darkorange;
+  width: 3ch;
+
   border-radius: 8px;
   /* Borda arredondada */
 }
 
+
+
+.butaum{
+  background-color: darkorange;
+  height: min-content;
+}
 .butaum button {
-  background-color: #333;
+background: none;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -191,29 +201,30 @@ body {
 }
 
 .butaum img {
-  width: 50px;
-  /* Ajuste conforme necessário */
-  height: auto;
+  width: 3ch;
   /* Para manter a proporção da imagem */
   margin-right: 5px;
   /* Espaçamento entre as imagens */
 }
 
-.identidade {
+.identidade{
+  justify-content: center;
+  background-color: darkorange;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
-.identidade2 img.avatar {
-  width: 80px;
-  /* Ajuste conforme necessário */
-  height: 80px;
+.identidade img.avatar {
+
+width: 4ch;
   /* Ajuste conforme necessário */
   border-radius: 50%;
   /* Para criar uma imagem de avatar circular */
-  margin-bottom: 10px;
+
 }
+
+
 
 .barraseek {
   scale: 500%;
