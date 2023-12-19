@@ -1,4 +1,3 @@
-
 import styles from './page.module.css';
 import React from 'react';
 
@@ -26,29 +25,19 @@ const dadosMusicais = [
 function PaginaMusical() {
   return (
     <div className={styles.container}>
-      <div>
-        <h1>Músicas Populares</h1>
-        <ul>
-          {dadosMusicais.map((musica, index) => (
-            <li key={index} className={`${styles['item-musical']} ${styles.card}`}>
-              <h3 className={styles.nome}>{musica.nome}</h3>
-              <img className={styles.canva} src={musica.canva} alt={`Capa de ${musica.album}`} />
-              <p className={styles.album}>Álbum: {musica.album}</p>
-              <p className={styles.artista}>Artista: {musica.artista}</p>
-            </li>
-          ))}
-        </ul>
+      <h1>Músicas Populares</h1>
+      <div className={styles['card-container']}>
+        {dadosMusicais.map((musica, index) => (
+          <div key={index} className={`${styles['item-musical']} ${styles.card}`}>
+            <h3 className={styles.nome}>{musica.nome}</h3>
+            <img className={styles.canva} src={musica.canva} alt={`Capa de ${musica.album}`} />
+            <p className={styles.album}>Álbum: {musica.album}</p>
+            <p className={styles.artista}>Artista: {musica.artista}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
 }
 
 export default PaginaMusical;
-
-export function Home() {
-  return (
-    <main className={styles.container}>
-      {/* Conteúdo da Home */}
-    </main>
-  );
-}
