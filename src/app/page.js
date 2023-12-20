@@ -1,41 +1,86 @@
+import React from 'react';
 import styles from './page.module.css';
-// import React from 'react';
 
 const dadosMusicais = [
   {
-    nome: 'Nome da Música 1',
-    canva: 'url_da_imagem_1',
-    album: 'Nome do Álbum 1',
-    artista: 'Nome do Artista 1',
+    canva: 'artistas/ado.jpg',
+    album: 'Ado',
+    artista: 'artista',
   },
   {
-    nome: 'Nome da Música 2',
-    canva: 'url_da_imagem_2',
-    album: 'Nome do Álbum 2',
-    artista: 'Nome do Artista 2',
+    canva: 'artistas/eve.jpg',
+    album: 'Eve',
+    artista: 'artista',
   },
   {
-    nome: 'Nome da Música 3',
-    canva: 'url_da_imagem_3',
-    album: 'Nome do Álbum 3',
-    artista: 'Nome do Artista 3',
+    canva: 'artistas/toc.jpg',
+    album: 'The Oral Cigarretes',
+    artista: 'artista',
+  },
+  {
+    canva: 'artistas/akfg.jpg',
+    album: 'Asian Kung Fu Generation',
+    artista: 'artista',
+  },
+  {
+    canva: 'artistas/bbm.jpg',
+    album: 'Baby Metal',
+    artista: 'artista',
   },
 ];
+
+const topAlbums = [
+  {
+    canva: 'artistas/top1.jpg',
+    album: 'Top Album 1',
+  },
+  {
+    canva: 'artistas/top2.jpg',
+    album: 'Top Album 2',
+  },
+  {
+    canva: 'artistas/top3.jpg',
+    album: 'Top Album 3',
+  },
+];
+
+const cores = ['#E8115B', '#55A891', '#F037A5'];
+
+function PaginaTopAlbums() {
+  return (
+    <div className={`${styles.cardgen}`}>
+      {topAlbums.map((album, index) => (
+        <div
+          key={index}
+          className={`${styles['item-musical']} ${styles.card}`}
+          style={{
+            backgroundColor: cores[index],
+            width: '432px',
+            height: '162px',
+            margin: '10px', // Adicionei uma margem de 10 pixels
+          }}
+        >
+          <img className={styles.canva} src={album.canva} alt={`Capa de ${album.album}`} />
+          <p className={styles.album}>{album.album}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
 
 function PaginaMusical() {
   return (
     <div className={styles.container}>
-      <h1>Músicas Populares</h1>
       <div className={styles['card-container']}>
         {dadosMusicais.map((musica, index) => (
           <div key={index} className={`${styles['item-musical']} ${styles.card}`}>
-            <h3 className={styles.nome}>{musica.nome}</h3>
             <img className={styles.canva} src={musica.canva} alt={`Capa de ${musica.album}`} />
-            <p className={styles.album}>Álbum: {musica.album}</p>
-            <p className={styles.artista}>Artista: {musica.artista}</p>
+            <p className={styles.album}>{musica.album}</p>
+            <p className={styles.artista}>{musica.artista}</p>
           </div>
         ))}
       </div>
+      <PaginaTopAlbums />
     </div>
   );
 }
