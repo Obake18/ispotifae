@@ -159,7 +159,7 @@ function PaginaMusical() {
       <div className={styles['card-container']}>
         {dadosMusicais.map((musica, index) => (
           <div key={index} className={`${styles['item-musical']} ${styles.card}`}>
-            <img className={styles.canva} src={musica.canva} alt={`Capa de ${musica.album}`} />
+            <img className={styles.capadoartista} src={musica.canva} alt={`Capa de ${musica.album}`} />
             <p className={styles.album}>{musica.album}</p>
             <p className={styles.artista}>{musica.artista}</p>
           </div>
