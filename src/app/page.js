@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './page.module.css';
 
+
 const dadosMusicais = [
   {
     canva: 'artistas/ado.jpg',
@@ -121,6 +122,8 @@ function PaginaTopGeneros() {
 
   );
 }
+
+
 
 
 function PaginaTopAlbums() {
