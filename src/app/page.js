@@ -28,21 +28,25 @@ const dadosMusicais = [
     album: 'Baby Metal',
     artista: 'artista',
   },
-  
+  {
+    canva: 'artistas/bbm.jpg',
+    album: 'Baby Metal',
+    artista: 'artista',
+  },
 ];
 
 const topAlbums = [
   {
     canva: 'artistas/top1.jpg',
-    album: 'Top Album 1',
+    album: 'World, World, World', 
   },
   {
     canva: 'artistas/top2.jpg',
-    album: 'Top Album 2',
+    album: 'ReadyMade',
   },
   {
     canva: 'artistas/top3.jpg',
-    album: 'Top Album 3',
+    album: 'Otogi',
   },
 ];
 
