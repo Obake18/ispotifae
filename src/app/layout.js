@@ -99,65 +99,67 @@ function Seekbar({ capa, icon2 }) {
 
 const artistasData = [
   {
-    id: 1,
-    genero: 'J-Pop',
-    tipo: 'Música',
-    imagem: '/artistas/artist-1.jpg',
+    "id": 1,
+    "genero": "J-Pop",
+    "tipo": "Música",
+    "imagem": "artistas/avatar.jpg"
   },
   {
-    id: 2,
-    genero: 'Hip-Hop',
-    tipo: 'Música',
-    imagem: '/artistas/artist-2.jpg',
+    "id": 2,
+    "genero": "Hip-Hop",
+    "tipo": "Música",
+    "imagem": "artistas/avatar.jpg"
   },
   {
-    id: 3,
-    genero: 'Vocaloid',
-    tipo: 'Música',
-    imagem: '/artistas/artist-3.jpg',
+    "id": 3,
+    "genero": "Vocaloid",
+    "tipo": "Música",
+    "imagem": "artistas/avatar.jpg"
   },
   {
-    id: 4,
-    genero: 'J-Pop',
-    tipo: 'Música',
-    imagem: '/artistas/artist-4.jpg',
+    "id": 4,
+    "genero": "J-Pop",
+    "tipo": "Música",
+    "imagem": "artistas/avatar.jpg"
   },
   {
-    id: 5,
-    genero: 'J-Pop',
-    tipo: 'Música',
-    imagem: '/artistas/artist-5.jpg',
+    "id": 5,
+    "genero": "J-Pop",
+    "tipo": "Música",
+    "imagem": "artistas/avatar.jpg"
   },
   {
-    id: 6,
-    genero: 'J-Pop',
-    tipo: 'Música',
-    imagem: '/artistas/artist-6.jpg',
+    "id": 6,
+    "genero": "J-Pop",
+    "tipo": "Música",
+    "imagem": "artistas/avatar.jpg"
   },
   {
-    id: 7,
-    genero: 'J-Pop',
-    tipo: 'Música',
-    imagem: '/artistas/artist-7.jpg',
+    "id": 7,
+    "genero": "J-Pop",
+    "tipo": "Música",
+    "imagem": "artistas/avatar.jpg"
   },
   {
-    id: 8,
-    genero: 'J-Pop',
-    tipo: 'Música',
-    imagem: '/artistas/artist-8.jpg',
+    "id": 8,
+    "genero": "J-Pop",
+    "tipo": "Música",
+    "imagem": "artistas/avatar.jpg"
   },
   {
-    id: 9,
-    genero: 'J-Pop',
-    tipo: 'Música',
-    imagem: '/artistas/artist-9.jpg',
+    "id": 9,
+    "genero": "J-Pop",
+    "tipo": "Música",
+    "imagem": "artistas/avatar.jpg"
   },
   {
-    id: 10,
-    genero: 'J-Pop',
-    tipo: 'Música',
-    imagem: '/artistas/artist-10.jpg',
-  },
+    "id": 10,
+    "genero": "J-Pop",
+    "tipo": "Música",
+    "imagem": "artistas/avatar.jpg"
+  }
+
+
 ];
 
 

@@ -38,7 +38,7 @@ const dadosMusicais = [
 const topAlbums = [
   {
     canva: 'artistas/top1.jpg',
-    album: 'World, World, World', 
+    album: 'World, World, World',
   },
   {
     canva: 'artistas/top2.jpg',
@@ -98,31 +98,48 @@ const topGeneros = [
 const coresTopGeneros = ['#FFD700', '#7FFF00', '#4682B4', '#FF6347', '#8A2BE2', '#00FA9A', '#FF4500', '#8B4513', '#2F4F4F', '#FF1493'];
 
 function PaginaTopGeneros() {
-  const cardsPorLinha = 2; 
+  const cardsPorLinha = 2;
 
   return (
-    <div>
-    <div className={`${styles['card-container']}`}>
-      {topGeneros.map((genero, index) => (
-        <div
-          key={index}
-          className={`${styles['item-musical']} ${styles.topjapan}`}
+    <div
+    
+    style={{
+      display : 'flex',
+      justifyContent : 'space-around',
+      width : '1020px',
+      
+    }}>
+  <div className={`${styles['card-container']}`}>
+    {topGeneros.map((genero, index) => (
+      <div
+        key={index}
+        className={`${styles['item-musical']} ${styles.topjapan}`}
+        style={{
+          backgroundColor: coresTopGeneros[index],
+          width: '152px',
+          height: '135px',
+          margin: '10px',
+          borderRadius: '12px',
+          display: 'inline-block',
+          marginBottom: '20px', // Adiciona espaço entre as fileiras
+        }}
+      >
+        <img
+          className={styles.canva}
+          src={genero.capadotop}
+          alt={`Capa de ${genero.nomedotop}`}
           style={{
-            backgroundColor: coresTopGeneros[index],
-            width: '200px',
-            height: '200px',
-            margin: '10px',
-            borderRadius: '12px',
-            display: 'inline-block',
+            top: '60px',
+            left: '80px',
+            position: 'relative',
           }}
-        >
-          <img className={styles.canva} src={genero.capadotop} alt={`Capa de ${genero.nomedotop}`} />
-          <p className={styles.nomedotop}>{genero.nomedotop}</p>
-        </div>
-      ))}
-    </div>
+        />
+        <p className={styles.nomedotop}>{genero.nomedotop}</p>
+      </div>
+    ))}
+  </div>
+</div>
 
-    </div>
 
   );
 }
@@ -142,7 +159,7 @@ function PaginaTopAlbums() {
             width: '332px',
             height: '162px',
             margin: '10px',
-            borderRadius :'12px',
+            borderRadius: '12px',
           }}
         >
           <img className={styles.canva} src={album.canva} alt={`Capa de ${album.album}`} />

@@ -134,18 +134,19 @@ body {
 }
 
 .artista-item {
+  margin-right: 0;
+  margin-left: 10em;
   text-align: right;
   margin: 10px;
 }
 
 .artista-item img {
-  width: 10px;
-  height: 10px;
+  margin-right: 0;
+  margin-left: auto; /* Adicionado para alinhar à direita */
+  width: 56px;
+  height: 56px;
   object-fit: cover;
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-  border-radius: 25px;
+  border-radius: 55%;
   margin-bottom: 10px;
 }
 
