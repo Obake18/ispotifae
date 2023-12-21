@@ -27,6 +27,7 @@ const dadosMusicais = [
     album: 'Baby Metal',
     artista: 'artista',
   },
+  
 ];
 
 const topAlbums = [
@@ -44,7 +45,83 @@ const topAlbums = [
   },
 ];
 
-const cores = ['#E8115B', '#55A891', '#F037A5'];
+const coresTopAlbums = ['#E8115B', '#55A891', '#F037A5'];
+
+const topGeneros = [
+  {
+    nomedotop: 'J-Pop',
+    capadotop: 'generos/jpop.jpg',
+  },
+  {
+    nomedotop: 'Rock',
+    capadotop: 'generos/rock.jpg',
+  },
+  {
+    nomedotop: 'Electronic',
+    capadotop: 'generos/electronic.jpg',
+  },
+  {
+    nomedotop: 'Hip-Hop',
+    capadotop: 'generos/hiphop.jpg',
+  },
+  {
+    nomedotop: 'Jazz',
+    capadotop: 'generos/jazz.jpg',
+  },
+  {
+    nomedotop: 'Reggae',
+    capadotop: 'generos/reggae.jpg',
+  },
+  {
+    nomedotop: 'Classical',
+    capadotop: 'generos/classical.jpg',
+  },
+  {
+    nomedotop: 'Country',
+    capadotop: 'generos/country.jpg',
+  },
+  {
+    nomedotop: 'Metal',
+    capadotop: 'generos/metal.jpg',
+  },
+  {
+    nomedotop: 'R&B',
+    capadotop: 'generos/rnb.jpg',
+  },
+];
+
+const coresTopGeneros = ['#FFD700', '#7FFF00', '#4682B4', '#FF6347', '#8A2BE2', '#00FA9A', '#FF4500', '#8B4513', '#2F4F4F', '#FF1493'];
+
+function PaginaTopGeneros() {
+  const cardsPorLinha = 2; 
+
+  return (
+    <div>
+    <div className={`${styles['card-container']}`}>
+      {topGeneros.map((genero, index) => (
+        <div
+          key={index}
+          className={`${styles['item-musical']} ${styles.topjapan}`}
+          style={{
+            backgroundColor: coresTopGeneros[index],
+            width: '200px',
+            height: '200px',
+            margin: '10px',
+            borderRadius: '12px',
+            display: 'inline-block',
+          }}
+        >
+          <img className={styles.canva} src={genero.capadotop} alt={`Capa de ${genero.nomedotop}`} />
+          <p className={styles.nomedotop}>{genero.nomedotop}</p>
+        </div>
+      ))}
+    </div>
+
+    </div>
+
+  );
+}
+
 
 function PaginaTopAlbums() {
   return (
@@ -54,10 +131,11 @@ function PaginaTopAlbums() {
           key={index}
           className={`${styles['item-musical']} ${styles.card}`}
           style={{
-            backgroundColor: cores[index],
-            width: '432px',
+            backgroundColor: coresTopAlbums[index],
+            width: '332px',
             height: '162px',
-            margin: '10px', // Adicionei uma margem de 10 pixels
+            margin: '10px',
+            borderRadius :'12px',
           }}
         >
           <img className={styles.canva} src={album.canva} alt={`Capa de ${album.album}`} />
@@ -81,6 +159,7 @@ function PaginaMusical() {
         ))}
       </div>
       <PaginaTopAlbums />
+      <PaginaTopGeneros />
     </div>
   );
 }

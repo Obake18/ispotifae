@@ -8,14 +8,16 @@
 }
 
 .card-container {
+  
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .card {
 
   background-color: #1f1f1f;
+
   color: #ffffff;
   border-radius: 12px;
   padding: 20px;
@@ -41,5 +43,13 @@
 
 /* Adicionei a seguinte regra para ajustar o espaçamento entre os cards de topAlbuns */
 .cardgen .card {
-  margin: 10px;
+  margin: 1px;
 }
+
+.nomedotop {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff; /* Cor do texto */
+  margin: 0;
+}
+
